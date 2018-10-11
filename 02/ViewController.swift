@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var temp = 0
-    var x=0
-    var sum1=0
-    var sum=0
+    var temp:Double = 0
+    var x:Double = 0
+    var sum1:Double = 0
+    var sum:Double = 0
     @IBOutlet weak var text: UITextField!
     
     override func viewDidLoad() {
@@ -52,48 +52,74 @@ class ViewController: UIViewController {
     {text.text = text.text! + "0"
     }
     
+    
+    @IBAction func dot(_ sender: Any) {
+        text.text = text.text! + "."    }
+    
+    
+    
+    
+    
+    
     @IBAction func buttonequal(_ sender: Any) {
+    
         if (x == -1)
         {
-            sum1 = temp + Int(text.text!)!
+            sum1 = temp + Double(text.text!)!
            
-            print("+")
+            print("sum1=\(sum1) temp=\(temp)")
         }
         if (x == -2)
         {
-            sum1 = temp - Int(text.text!)!
-            
+            sum1 = temp - Double(text.text!)!
+            print("sum1=\(sum1) temp=\(temp)")
         }
         if (x == -3)
         {
-            sum1 = temp * Int(text.text!)!
-            
+            sum1 = temp * Double(text.text!)!
+            print("sum1=\(sum1) temp=\(temp)")
         }
         if (x == -4)
         {
-            sum1 = temp / Int(text.text!)!
-            
+            sum1 = temp / Double(text.text!)!
+            print("sum1=\(sum1) temp=\(temp)")
         }
         text.text = "\(sum1)"
     }
     @IBAction func buttonadd(_ sender: Any)
     {
         x = -1
+        temp = Double(text.text!)!
         text.text = ""
     }
     @IBAction func buttonminu(_ sender: Any)
     {
         x = -2
+        temp = Double(text.text!)!
+        text.text = ""
+        
     }
     @IBAction func buttonride(_ sender: Any)
     {
         x = -3
+        temp = Double(text.text!)!
+        text.text = ""
+        
     }
     @IBAction func buttondivide(_ sender: Any)
     {
         x = -4
+        temp = Double(text.text!)!
+        text.text = ""
+        
     }
     
+    @IBAction func clear(_ sender: Any) {
+        text.text = ""
+        
+    }
+    
+
     
     
     
