@@ -53,10 +53,23 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func dot(_ sender: Any) {
-        text.text = text.text! + "."    }
+    @IBAction func dot(_ sender: Any)
+    {
+        text.text = text.text! + "."
+        
+    }
     
+    @IBAction func buttonleft(_ sender: Any)
+    {
+        text.text = text.text! + "("
+        
+    }
     
+    @IBAction func buttonright(_ sender: Any)
+    {
+        text.text = text.text! + ")"
+        
+    }
     
     
     
