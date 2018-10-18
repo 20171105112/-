@@ -73,6 +73,20 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func square(_ sender: Any) {
+        x = 1
+        temp = Double(text.text!)!
+        text.text = ""
+    }
+    
+    
+    @IBAction func double(_ sender: Any) {
+        x = 2
+        temp = Double(text.text!)!
+        text.text = ""
+    }
+    
+    
     
     @IBAction func buttonequal(_ sender: Any) {
     
@@ -97,6 +111,17 @@ class ViewController: UIViewController {
             sum1 = temp / Double(text.text!)!
             print("sum1=\(sum1) temp=\(temp)")
         }
+        if (x == 1)
+        {
+            sum1 = sqrt(temp)
+            print("sum1=\(sum1) temp=\(temp)")
+        }
+        if (x == 2)
+        {
+            sum1 = pow(temp,Double(text.text!)!)
+            print("sum1=\(sum1) temp=\(temp)")
+        }
+        
         text.text = "\(sum1)"
     }
     @IBAction func buttonadd(_ sender: Any)
