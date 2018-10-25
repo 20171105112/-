@@ -184,7 +184,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-th-R4a">
                                 <rect key="frame" x="159" y="355" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&gt;"/>
+                                <state key="normal" title="√"/>
                                 <connections>
                                     <action selector="square:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqi-Sn-ySH"/>
                                 </connections>
@@ -195,6 +195,14 @@
                                 <state key="normal" title="^"/>
                                 <connections>
                                     <action selector="double:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vC-1R-t5Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A8-n2-qcs">
+                                <rect key="frame" x="64" y="402" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="π"/>
+                                <connections>
+                                    <action selector="buttonPi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epC-s2-xFI"/>
                                 </connections>
                             </button>
                         </subviews>

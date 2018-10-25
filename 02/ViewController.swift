@@ -52,6 +52,12 @@ class ViewController: UIViewController {
     {text.text = text.text! + "0"
     }
     
+    @IBAction func buttonPi(_ sender: Any)
+    {
+    text.text = text.text! + "3.1415926"
+    }
+    
+    
     
     @IBAction func dot(_ sender: Any)
     {
@@ -75,7 +81,7 @@ class ViewController: UIViewController {
     
     @IBAction func square(_ sender: Any) {
         x = 1
-        temp = Double(text.text!)!
+        temp = Double                                                                                                                                                                                                                      (text.text!)!
         text.text = ""
     }
     
