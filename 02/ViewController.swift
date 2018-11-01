@@ -231,32 +231,46 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonminu(_ sender: Any)
     {
-        x = -2
+        if x == -2{
+            text.text = "\(temp - Double(text.text!)!)"
+            
+        }
         temp = Double(text.text!)!
-        text.text = ""
+        y = 2
+        x = -2
         
     }
     @IBAction func buttonride(_ sender: Any)
     {
-        x = -3
+        if x == -3{
+            text.text = "\(temp * Double(text.text!)!)"
+            
+        }
         temp = Double(text.text!)!
-        text.text = ""
+        y = 2
+        x = -3
         
     }
     @IBAction func buttondivide(_ sender: Any)
     {
-        x = -4
+        if x == -4{
+            text.text = "\(temp / Double(text.text!)!)"
+            
+        }
         temp = Double(text.text!)!
-        text.text = ""
+        y = 2
+        x = -4
         
     }
     
     @IBAction func clear(_ sender: Any) {
         text.text = ""
-        
+        temp = 0
+        x = 0
+        y = 0
+        sum1 = 0
+        sum = 0
     }
-    
-
     
     
     
