@@ -144,26 +144,58 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPi(_ sender: Any)
     {
-    text.text = text.text! + "3.1415926"
+        if y == 1
+        {
+            text.text = text.text! + "3.1415926"
+        }
+        else
+        {
+            text.text = "3.1415926"
+        }
+        y = 1
     }
     
     
     
     @IBAction func dot(_ sender: Any)
     {
-        text.text = text.text! + "."
+        if y == 1
+        {
+            text.text = text.text! + "."
+        }
+        else
+        {
+            text.text = "."
+        }
+        y = 1
         
     }
     
     @IBAction func buttonleft(_ sender: Any)
     {
-        text.text = text.text! + "("
+        if y == 1
+        {
+            text.text = text.text! + "("
+        }
+        else
+        {
+            text.text = "("
+        }
+        y = 1
         
     }
     
     @IBAction func buttonright(_ sender: Any)
     {
-        text.text = text.text! + ")"
+        if y == 1
+        {
+            text.text = text.text! + ")"
+        }
+        else
+        {
+            text.text = ")"
+        }
+        y = 1
         
     }
     
@@ -173,6 +205,7 @@ class ViewController: UIViewController {
         x = 1
         temp = Double                                                                                                                                                                                                                                                   (text.text!)!
         text.text = ""
+        
     }
     
     
@@ -221,7 +254,8 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonadd(_ sender: Any)
     {
-        if x == -1{
+        if x == -1
+        {
             text.text = "\(temp + Double(text.text!)!)"
             
         }
@@ -231,7 +265,8 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonminu(_ sender: Any)
     {
-        if x == -2{
+        if x == -2
+        {
             text.text = "\(temp - Double(text.text!)!)"
             
         }
@@ -242,7 +277,8 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonride(_ sender: Any)
     {
-        if x == -3{
+        if x == -3
+        {
             text.text = "\(temp * Double(text.text!)!)"
             
         }
@@ -253,7 +289,8 @@ class ViewController: UIViewController {
     }
     @IBAction func buttondivide(_ sender: Any)
     {
-        if x == -4{
+        if x == -4
+        {
             text.text = "\(temp / Double(text.text!)!)"
             
         }
